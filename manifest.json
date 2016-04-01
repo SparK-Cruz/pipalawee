@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Pipefy Paused Label Awareness Enhancement Extension",
+  "short_name": "Pipalawee",
+  "description": "Adds a large warning to cards with label titled \"Paused\"!",
+  "version": "1.0.0",
+
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [ "*://app.pipefy.com/*" ],
+      "js": [ "pipalawee.js" ],
+      "run_at": "document_start"
+    }
+  ]
+}
