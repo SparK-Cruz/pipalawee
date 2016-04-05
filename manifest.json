@@ -14,6 +14,11 @@
       "matches": [ "*://app.pipefy.com/*" ],
       "js": [ "pipalawee.js" ],
       "run_at": "document_start"
+    },
+    {
+      "matches": [ "*://beta.pipefy.com/*" ],
+      "js": [ "pipalawee_beta.js" ],
+      "run_at": "document_start"
     }
   ]
 }
